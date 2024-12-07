@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.abc.bank.mortgage.repository.CustomerRepository">
+    <resultMap id="BaseResultMap" type="com.abc.bank.mortgage.models.Customer">
+        <!--@JPA.Support generated on 2024-12-07 14:08:51.-->
+        <!--@Table customer-->
+        <id column="customer_id" jdbcType="BIGINT" property="customerId"/>
+        <result column="first_name" jdbcType="VARCHAR" property="firstName"/>
+        <result column="last_name" jdbcType="VARCHAR" property="lastName"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="number" jdbcType="VARCHAR" property="number"/>
+        <result column="gender" jdbcType="VARCHAR" property="gender"/>
+        <result column="date_of_birth" jdbcType="DATE" property="dateOfBirth"/>
+        <result column="created_at" jdbcType="TIMESTAMP" property="createdAt"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-12-07 14:08:51.-->
+        customer_id, first_name, last_name, email, `number`, gender, date_of_birth, created_at
+    </sql>
+</mapper>
